@@ -13,6 +13,9 @@
 		94A9841015900812006A8140 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 94A9840E15900812006A8140 /* Credits.rtf */; };
 		94A9841315900812006A8140 /* LCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A9841215900812006A8140 /* LCAppDelegate.m */; };
 		94A9841615900812006A8140 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94A9841415900812006A8140 /* MainMenu.xib */; };
+		94A9841E1590089D006A8140 /* LCWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A9841D1590089D006A8140 /* LCWindow.m */; };
+		94A98421159009E8006A8140 /* LCBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A98420159009E8006A8140 /* LCBackgroundView.m */; };
+		94A9842315900BD2006A8140 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A9842215900BD2006A8140 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +24,19 @@
 		94A9840215900812006A8140 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		94A9840315900812006A8140 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		94A9840415900812006A8140 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		94A9840715900812006A8140 /* container-Info.plist */ = {isa = PBXFileReference; path = "container-Info.plist"; sourceTree = "<group>"; };
+		94A9840715900812006A8140 /* container-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "container-Info.plist"; sourceTree = "<group>"; };
 		94A9840915900812006A8140 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		94A9840B15900812006A8140 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		94A9840D15900812006A8140 /* container-Prefix.pch */ = {isa = PBXFileReference; path = "container-Prefix.pch"; sourceTree = "<group>"; };
+		94A9840D15900812006A8140 /* container-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "container-Prefix.pch"; sourceTree = "<group>"; };
 		94A9840F15900812006A8140 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		94A9841115900812006A8140 /* LCAppDelegate.h */ = {isa = PBXFileReference; path = LCAppDelegate.h; sourceTree = "<group>"; };
+		94A9841115900812006A8140 /* LCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAppDelegate.h; sourceTree = "<group>"; };
 		94A9841215900812006A8140 /* LCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCAppDelegate.m; sourceTree = "<group>"; };
 		94A9841515900812006A8140 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		94A9841C1590089D006A8140 /* LCWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCWindow.h; sourceTree = "<group>"; };
+		94A9841D1590089D006A8140 /* LCWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCWindow.m; sourceTree = "<group>"; };
+		94A9841F159009E8006A8140 /* LCBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBackgroundView.h; sourceTree = "<group>"; };
+		94A98420159009E8006A8140 /* LCBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBackgroundView.m; sourceTree = "<group>"; };
+		94A9842215900BD2006A8140 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94A9842315900BD2006A8140 /* QuartzCore.framework in Frameworks */,
 				94A9840015900812006A8140 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +55,7 @@
 		94A983F015900812006A8140 = {
 			isa = PBXGroup;
 			children = (
+				94A9842215900BD2006A8140 /* QuartzCore.framework */,
 				94A9840515900812006A8140 /* container */,
 				94A983FE15900812006A8140 /* Frameworks */,
 				94A983FC15900812006A8140 /* Products */,
@@ -86,6 +96,10 @@
 				94A9841215900812006A8140 /* LCAppDelegate.m */,
 				94A9841415900812006A8140 /* MainMenu.xib */,
 				94A9840615900812006A8140 /* Supporting Files */,
+				94A9841C1590089D006A8140 /* LCWindow.h */,
+				94A9841D1590089D006A8140 /* LCWindow.m */,
+				94A9841F159009E8006A8140 /* LCBackgroundView.h */,
+				94A98420159009E8006A8140 /* LCBackgroundView.m */,
 			);
 			path = container;
 			sourceTree = "<group>";
@@ -169,6 +183,8 @@
 			files = (
 				94A9840C15900812006A8140 /* main.m in Sources */,
 				94A9841315900812006A8140 /* LCAppDelegate.m in Sources */,
+				94A9841E1590089D006A8140 /* LCWindow.m in Sources */,
+				94A98421159009E8006A8140 /* LCBackgroundView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
