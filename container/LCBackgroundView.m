@@ -122,18 +122,26 @@
 
 - (void)drawRect:(NSRect)dirtyRect;
 {
-    [super drawRect:dirtyRect];
+
     CGContextRef context = (CGContextRef) [[NSGraphicsContext currentContext] graphicsPort];
+    
+    [[NSColor clearColor] setFill];
+    NSRectFill([self bounds]);
     
     if (maskImageRef) CGContextClipToMask(context, self.bounds, maskImageRef);
     
     CGContextSetFillColorWithColor(context, [NSColor colorWithCalibratedWhite:0.2 alpha:1.0].CGColor);
     CGContextFillRect(context, self.bounds);
-}
-
-- (void)layout;
-{
-    [super layout];
+    
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [[self window] display];
+            [[self window] setHasShadow:NO];
+            [[self window] setHasShadow:YES];
+        });
+    });
 }
 
 @end

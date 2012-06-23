@@ -16,6 +16,7 @@
 		94A9841E1590089D006A8140 /* LCWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A9841D1590089D006A8140 /* LCWindow.m */; };
 		94A98421159009E8006A8140 /* LCBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A98420159009E8006A8140 /* LCBackgroundView.m */; };
 		94A9842315900BD2006A8140 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A9842215900BD2006A8140 /* QuartzCore.framework */; };
+		94CC78F61595461F00F932FF /* LCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CC78F51595461F00F932FF /* LCController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		94A9841F159009E8006A8140 /* LCBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBackgroundView.h; sourceTree = "<group>"; };
 		94A98420159009E8006A8140 /* LCBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBackgroundView.m; sourceTree = "<group>"; };
 		94A9842215900BD2006A8140 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		94CC78F41595461F00F932FF /* LCController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCController.h; sourceTree = "<group>"; };
+		94CC78F51595461F00F932FF /* LCController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +58,6 @@
 		94A983F015900812006A8140 = {
 			isa = PBXGroup;
 			children = (
-				94A9842215900BD2006A8140 /* QuartzCore.framework */,
 				94A9840515900812006A8140 /* container */,
 				94A983FE15900812006A8140 /* Frameworks */,
 				94A983FC15900812006A8140 /* Products */,
@@ -73,6 +75,7 @@
 		94A983FE15900812006A8140 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				94A9842215900BD2006A8140 /* QuartzCore.framework */,
 				94A983FF15900812006A8140 /* Cocoa.framework */,
 				94A9840115900812006A8140 /* Other Frameworks */,
 			);
@@ -92,14 +95,16 @@
 		94A9840515900812006A8140 /* container */ = {
 			isa = PBXGroup;
 			children = (
+				94A9840615900812006A8140 /* Supporting Files */,
 				94A9841115900812006A8140 /* LCAppDelegate.h */,
 				94A9841215900812006A8140 /* LCAppDelegate.m */,
 				94A9841415900812006A8140 /* MainMenu.xib */,
-				94A9840615900812006A8140 /* Supporting Files */,
 				94A9841C1590089D006A8140 /* LCWindow.h */,
 				94A9841D1590089D006A8140 /* LCWindow.m */,
 				94A9841F159009E8006A8140 /* LCBackgroundView.h */,
 				94A98420159009E8006A8140 /* LCBackgroundView.m */,
+				94CC78F41595461F00F932FF /* LCController.h */,
+				94CC78F51595461F00F932FF /* LCController.m */,
 			);
 			path = container;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 				94A9841315900812006A8140 /* LCAppDelegate.m in Sources */,
 				94A9841E1590089D006A8140 /* LCWindow.m in Sources */,
 				94A98421159009E8006A8140 /* LCBackgroundView.m in Sources */,
+				94CC78F61595461F00F932FF /* LCController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +316,7 @@
 				94A9841B15900812006A8140 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

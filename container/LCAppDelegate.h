@@ -8,8 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
+#import "LCController.h"
+
+
 @interface LCAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet LCController *windowController;
 
 @end

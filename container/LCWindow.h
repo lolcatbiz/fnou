@@ -10,4 +10,5 @@
 
 @interface LCWindow : NSWindow
 
+
 @end

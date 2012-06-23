@@ -10,10 +10,26 @@
 
 @implementation LCWindow
 
-- (void)awakeFromNib;
+- (id)initWithContentRect:(NSRect)contentRect
+                styleMask:(NSUInteger)aStyle
+                  backing:(NSBackingStoreType)bufferingType
+                    defer:(BOOL)flag;
 {
-    self.backgroundColor = [NSColor clearColor];
-    self.opaque = NO;
+    self = [super initWithContentRect:contentRect
+                            styleMask:(NSBorderlessWindowMask | NSResizableWindowMask | NSTexturedBackgroundWindowMask)
+                              backing:NSBackingStoreBuffered
+                                defer:NO];
+    if (self) {
+        [self setAlphaValue:1.0];
+        [self setOpaque:NO];
+    }
+    return self;
 }
+
+- (BOOL)canBecomeKeyWindow;
+{
+    return YES;
+}
+
 
 @end
