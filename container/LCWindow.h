@@ -10,5 +10,6 @@
 
 @interface LCWindow : NSWindow
 
+@property (nonatomic, assign) NSPoint initialLocation;
 
 @end

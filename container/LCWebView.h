@@ -10,4 +10,7 @@
 
 @interface LCWebView : WebView
 
+@property (nonatomic, assign) NSView *HTMLView;
+
+
 @end

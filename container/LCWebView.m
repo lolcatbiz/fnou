@@ -10,11 +10,17 @@
 
 @implementation LCWebView
 
+
 - (void)layerViewHack:(NSView *)view;
 {
     view.wantsLayer = YES;
     view.layer.cornerRadius = 10;
     view.layer.masksToBounds = YES;
+    
+    if ([[view className] isEqualToString:@"WebHTMLView"]) {
+        self.HTMLView = view;
+    }
+    
     for (NSView *subview in view.subviews) {
         [self layerViewHack:subview];
     }
@@ -24,4 +30,19 @@
 {
     [self layerViewHack:self];
 }
+
+
+- (NSView *)hitTest:(NSPoint)aPoint;
+{
+    BOOL shouldForwardTouches = NO;
+    
+    if (!shouldForwardTouches) {
+        return nil;
+    }
+    return [super hitTest:aPoint];
+}
+
+
+
+
 @end
