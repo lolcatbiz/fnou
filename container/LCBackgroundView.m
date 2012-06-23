@@ -109,9 +109,6 @@
     
     if (maskImageRef) CGImageRelease(maskImageRef);
     maskImageRef = CGBitmapContextCreateImage(context);
-    
-    // update shadow
-    // laterz
 }
 
 - (void)setFrameSize:(NSSize)newSize;

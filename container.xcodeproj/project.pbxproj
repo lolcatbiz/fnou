@@ -17,6 +17,8 @@
 		94A98421159009E8006A8140 /* LCBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A98420159009E8006A8140 /* LCBackgroundView.m */; };
 		94A9842315900BD2006A8140 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A9842215900BD2006A8140 /* QuartzCore.framework */; };
 		94CC78F61595461F00F932FF /* LCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CC78F51595461F00F932FF /* LCController.m */; };
+		94CC78F915954BB300F932FF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94CC78F815954BB300F932FF /* WebKit.framework */; };
+		94CC78FC1595519500F932FF /* LCWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CC78FB1595519500F932FF /* LCWebView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,9 @@
 		94A9842215900BD2006A8140 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		94CC78F41595461F00F932FF /* LCController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCController.h; sourceTree = "<group>"; };
 		94CC78F51595461F00F932FF /* LCController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCController.m; sourceTree = "<group>"; };
+		94CC78F815954BB300F932FF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		94CC78FA1595519500F932FF /* LCWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCWebView.h; sourceTree = "<group>"; };
+		94CC78FB1595519500F932FF /* LCWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCWebView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94CC78F915954BB300F932FF /* WebKit.framework in Frameworks */,
 				94A9842315900BD2006A8140 /* QuartzCore.framework in Frameworks */,
 				94A9840015900812006A8140 /* Cocoa.framework in Frameworks */,
 			);
@@ -75,6 +81,7 @@
 		94A983FE15900812006A8140 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				94CC78F815954BB300F932FF /* WebKit.framework */,
 				94A9842215900BD2006A8140 /* QuartzCore.framework */,
 				94A983FF15900812006A8140 /* Cocoa.framework */,
 				94A9840115900812006A8140 /* Other Frameworks */,
@@ -105,6 +112,8 @@
 				94A98420159009E8006A8140 /* LCBackgroundView.m */,
 				94CC78F41595461F00F932FF /* LCController.h */,
 				94CC78F51595461F00F932FF /* LCController.m */,
+				94CC78FA1595519500F932FF /* LCWebView.h */,
+				94CC78FB1595519500F932FF /* LCWebView.m */,
 			);
 			path = container;
 			sourceTree = "<group>";
@@ -191,6 +200,7 @@
 				94A9841E1590089D006A8140 /* LCWindow.m in Sources */,
 				94A98421159009E8006A8140 /* LCBackgroundView.m in Sources */,
 				94CC78F61595461F00F932FF /* LCController.m in Sources */,
+				94CC78FC1595519500F932FF /* LCWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
