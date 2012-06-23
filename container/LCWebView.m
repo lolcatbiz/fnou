@@ -13,7 +13,7 @@
 - (void)layerViewHack:(NSView *)view;
 {
     view.wantsLayer = YES;
-    view.layer.cornerRadius = 50;
+    view.layer.cornerRadius = 10;
     view.layer.masksToBounds = YES;
     for (NSView *subview in view.subviews) {
         [self layerViewHack:subview];

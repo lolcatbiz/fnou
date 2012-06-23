@@ -81,6 +81,15 @@
 
 @implementation LCBackgroundView
 
+- (void)awakeFromNib;
+{
+    self.layer.delegate = self;
+    self.layer.shadowPath = [NSBezierPath bezierPathWithRect:self.frame].quartzPath;
+    self.layer.shadowOffset = CGSizeMake(10, 10);
+    self.layer.shadowColor = [NSColor greenColor].CGColor;
+    self.layer.shadowRadius = 10;
+}
+
 - (void)dealloc;
 {
     CGImageRelease(maskImageRef);
@@ -117,11 +126,8 @@
     [self updateMask];
 }
 
-- (void)drawRect:(NSRect)dirtyRect;
+- (void)drawLayer:(CALayer *)layer inContext:(CGContextRef)context;
 {
-
-    CGContextRef context = (CGContextRef) [[NSGraphicsContext currentContext] graphicsPort];
-    
     [[NSColor clearColor] setFill];
     NSRectFill([self bounds]);
     

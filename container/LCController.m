@@ -15,7 +15,6 @@
 {
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://next.lolcat.biz"]];
     [self.webView.mainFrame loadRequest:request];
-    [self.webView removeFromSuperview];
 }
 
 @end
